@@ -1,6 +1,6 @@
 import React from 'react';
 import { SafeAreaView, StatusBar } from 'react-native';
-import LoginScreen from '../boletin/screens/login';
+import LoginScreen from '../boletin/screens/Login';
 
 const App = () => {
   return (
