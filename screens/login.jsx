@@ -14,7 +14,7 @@ const LoginScreen = () => {
         <Text style={styles.buttonText}>Ingresar</Text>
       </TouchableOpacity>
 
-    <Text style={styles.subtitle}>¿No tienes cuenta? Crea una.</Text>
+    <Text style={styles.subtitle}>¿No tienes cuenta?</Text>
 
 
       <TouchableOpacity style={styles.buttonSecondary}>
