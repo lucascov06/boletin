@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "boletin-virtual-app",
-    "slug": "boletin-virtual-app",
+    "name": "boletin-virtual",
+    "slug": "boletin-virtual",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
