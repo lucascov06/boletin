@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { SafeAreaView, StatusBar } from 'react-native';
 import LoginScreen from '../boletin/screens/login';
@@ -12,4 +13,3 @@ const App = () => {
 };
 
 export default App;
-
