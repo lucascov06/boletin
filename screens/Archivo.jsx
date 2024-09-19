@@ -44,8 +44,37 @@ const ArchivoScreen = () => {
             <TouchableOpacity style={styles.loginButton}>
                 <Text style={styles.loginButtonText}>Ingresar</Text>
             </TouchableOpacity>
+
+            <Text style={styles.orText}>- O continuar con -</Text>
+
+            <View style={styles.socialButtons}>
+                <TouchableOpacity>
+                    <Image
+                        style={styles.socialIcon}
+                        source={{ uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/640px-Google_%22G%22_logo.svg.png' }} 
+                    />
+                </TouchableOpacity>
+                <TouchableOpacity>
+                    <Image
+                        style={styles.socialIcon}
+                        source={{ uri: 'https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg' }} 
+                    />
+                </TouchableOpacity>
+                <TouchableOpacity>
+                    <Image
+                        style={styles.socialIcon}
+                        source={{ uri: 'https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg' }} 
+                    />
+                </TouchableOpacity>
+            </View>
+
+            <TouchableOpacity>
+                <Text style={styles.signUpText}>Crea una cuenta <Text style={styles.signUpLink}>Sign Up</Text></Text>
+            </TouchableOpacity>
+        </View>
     );
-}
+};
+
 const styles = StyleSheet.create({
   container: {
   flex: 1,
