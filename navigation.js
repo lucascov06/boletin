@@ -1,20 +1,22 @@
 import React from "react";
-import { createBottomTabNavigator} from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
-
+import Archivo from "./screens/Archivo";
+import { createStackNavigator } from '@react-navigation/stack';
 // screens
-import HomeScreen from "./screens/HomeScreen";
-import SettingScreen from "./screens/SettingScreen";
+import Singin from "./singin";
+import Singinprofesor from "./singin2";
 
 
-const Tab = createBottomTabNavigator();
+const Stack = createStackNavigator();
 
 function Mytabs() {
     return (
-        <tab.Navigator>
-            <tab.Screen name="Home" component={HomeScreen} />
-            <tab.Screen name="Setting" component={SettingScreen} />
-        </tab.Navigator>    
+        <Stack.Navigator>
+            <tab.Screen name="Archivo" component={Archivo} />
+            <tab.Screen name="Singin" component={Singin} />
+            <tab.Screen name="Singinprofesor" component={Singinprofesor } />
+
+        </Stack.Navigator>    
     );
 }    
 
