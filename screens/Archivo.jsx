@@ -1,5 +1,6 @@
-import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet,} from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';  
 
 const Archivo = () => {
     return(
@@ -20,3 +21,5 @@ const styles = StyleSheet.create({
   },
 });
 export default Archivo;
+
+export default ArchivoScreen;
