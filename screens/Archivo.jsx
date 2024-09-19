@@ -2,9 +2,41 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';  
 
-const Archivo = () => {
-    return(
-  <Text style={styles.subtitle}>¿Ya tienes una cuenta?.</Text>
+const ArchivoScreen = () => {
+    const [passwordVisible, setPasswordVisible] = useState(false);  
+
+    return (
+        <View style={styles.container}>
+            <Text style={styles.title}>¡Ingrese su Cuenta!</Text>
+
+            <TextInput
+                style={styles.input}
+                placeholder="Nombre de usuario o gmail"
+                placeholderTextColor="#8A8A8A"
+            />
+            
+            <TextInput
+                style={styles.input}
+                placeholder="Id boletín"
+                placeholderTextColor="#8A8A8A"
+            />
+            
+            <View style={styles.passwordContainer}>
+                <TextInput
+                    style={styles.passwordInput}
+                    placeholder="Contraseña"
+                    placeholderTextColor="#8A8A8A"
+                    secureTextEntry={!passwordVisible}  
+                />
+                <TouchableOpacity onPress={() => setPasswordVisible(!passwordVisible)}>
+                    <Icon
+                        name={passwordVisible ? 'eye' : 'eye-slash'}  
+                        size={20}
+                        color="#8A8A8A"
+                    />
+                </TouchableOpacity>
+            </View>
+            
     );
 }
 const styles = StyleSheet.create({
