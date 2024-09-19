@@ -37,6 +37,13 @@ const ArchivoScreen = () => {
                 </TouchableOpacity>
             </View>
             
+            <TouchableOpacity>
+                <Text style={styles.forgotPassword}>¿Olvidaste tu contraseña?</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity style={styles.loginButton}>
+                <Text style={styles.loginButtonText}>Ingresar</Text>
+            </TouchableOpacity>
     );
 }
 const styles = StyleSheet.create({
