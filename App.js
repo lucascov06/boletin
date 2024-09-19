@@ -1,6 +1,6 @@
 
 import React from 'react';
-import LoginScreen from '../boletin/screens/Login.jsx';
+import LoginScreen from '../boletin/screens/login.jsx';
 import Archivo from './screens/Archivo.jsx';
 import Singin from './singin.jsx';
 import { NavigationContainer } from '@react-navigation/native';
