@@ -1,7 +1,13 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native';
-
+import { View, Text, Pressable, StyleSheet, Image } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import Archivo from './Archivo';
+import Singin from '../singin';
+import Singinprofesor from '../singin2';
 const LoginScreen = () => {
+
+  const navigation = useNavigation(); 
+
   return (
     <View style={styles.container}>
       <Image source={require('../assets/logo.png')} style={styles.logo} />
@@ -9,21 +15,23 @@ const LoginScreen = () => {
       <Text style={styles.title}>Un espacio seguro para verificar tu trayectoria académica.</Text>
 
       <Text style={styles.subtitle}>¿Ya tienes una cuenta?.</Text>
+      <Pressable 
+        style={styles.buttonPrimary}onPress={() => navigation.navigate('Archivo')}// Agrega la navegación al presionar el botón
+        >
+<Text style={styles.buttonText}>Ingresar</Text>
 
-      <TouchableOpacity style={styles.buttonPrimary}>
-        <Text style={styles.buttonText}>Ingresar</Text>
-      </TouchableOpacity>
+</Pressable>
 
     <Text style={styles.subtitle}>¿No tienes cuenta?</Text>
 
 
-      <TouchableOpacity style={styles.buttonSecondary}>
+      <Pressable style={styles.buttonSecondary}onPress={() => navigation.navigate('Singin')}>
         <Text style={styles.buttonText}>Crear cuenta</Text>
-      </TouchableOpacity>
+      </Pressable>
 
-      <TouchableOpacity style={styles.buttonTeacher}>
+      <Pressable style={styles.buttonTeacher}onPress={() => navigation.navigate('Singinprofesor')}>
         <Text style={styles.buttonTextTeacher}>Ingresar como profesor</Text>
-      </TouchableOpacity>
+      </Pressable>
     </View>
   );
 };
