@@ -1,11 +1,13 @@
 
 import React from 'react';
 import LoginScreen from '../boletin/screens/login.jsx';
-import Archivo from './screens/Archivo.jsx';
+
 import Singin from './singin.jsx';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import Singinprofesor from './singin2.jsx';
+import Singinprofesor from './screens/singin2.jsx';
+import Empezar from './screens/Empezar.jsx';
+import Archivo from './screens/Archivo.jsx';
 
 const Stack = createStackNavigator();
 const App = () => {
@@ -15,6 +17,7 @@ const App = () => {
       <Stack.Screen name="Login" component={LoginScreen} />
       <Stack.Screen name="Archivo" component={Archivo} />
       <Stack.Screen name="Singin" component={Singin} />
+      <Stack.Screen name="Empezar" component={Empezar} />
       <Stack.Screen name="Singinprofesor" component={Singinprofesor} />
 
     </Stack.Navigator>

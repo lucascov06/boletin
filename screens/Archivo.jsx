@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image } from 'react-native';
+import { View, Text,Pressable, TextInput, TouchableOpacity, StyleSheet, Image } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';  
+import { useNavigation } from '@react-navigation/native';
+import Empezar from './Empezar';
 
-const ArchivoScreen = () => {
+const Archivo = () => {
+  const navigation = useNavigation(); 
     const [passwordVisible, setPasswordVisible] = useState(false);  
-
+   
     return (
         <View style={styles.container}>
             <Text style={styles.title}>¡Ingrese su Cuenta!</Text>
@@ -41,9 +44,13 @@ const ArchivoScreen = () => {
                 <Text style={styles.forgotPassword}>¿Olvidaste tu contraseña?</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.loginButton}>
-                <Text style={styles.loginButtonText}>Ingresar</Text>
-            </TouchableOpacity>
+            
+            
+
+         <Pressable 
+         style={styles.loginButton}onPress={() => navigation.navigate('Empezar')}>
+        <Text style={styles.loginButtonText}>Ingresar</Text>
+      </Pressable>
 
             <Text style={styles.orText}>- O continuar con -</Text>
 
@@ -155,4 +162,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default ArchivoScreen;
+export default Archivo;
