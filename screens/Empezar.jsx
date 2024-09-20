@@ -9,6 +9,9 @@ const Empezar = () => {
       <Text style={styles.texto}>Ya puedes ver tu información académica!</Text>
 
       
+      <TouchableOpacity style={styles.boton}>
+        <Text style={styles.textoBoton}>Empezar</Text>
+      </TouchableOpacity>
     </View>
   );
 };
