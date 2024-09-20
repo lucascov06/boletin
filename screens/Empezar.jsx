@@ -34,3 +34,20 @@ const styles = StyleSheet.create({
       textAlign: 'center',
       marginTop: 10,
     },
+    boton: {
+      backgroundColor: '#E95F8B',
+      paddingVertical: 10,
+      paddingHorizontal: 20,
+      borderRadius: 5,
+      width: '10%',
+      alignItems: 'center',
+      marginBottom: 15,
+    },
+    textoBoton: {
+      color: 'white',
+      fontWeight: 'bold',
+    },
+  });
+
+
+export default Empezar;
