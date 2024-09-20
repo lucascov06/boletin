@@ -3,6 +3,8 @@ import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image } from 'reac
 import Icon from 'react-native-vector-icons/FontAwesome';  
 
 const ArchivoScreen = () => {
+const Archivo = () => {
+  const navigation = useNavigation(); 
     const [passwordVisible, setPasswordVisible] = useState(false);  
 
     return (
