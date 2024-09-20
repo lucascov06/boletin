@@ -6,6 +6,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Singin from "./singin";
 import Singinprofesor from "./screens/singin";
 import Empezar from "./screens/Empezar";
+import Contraseña from "./screens/Contraseña"; 
 
 const Stack = createStackNavigator();
 

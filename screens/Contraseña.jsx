@@ -25,6 +25,10 @@ export default function ForgotPasswordScreen() {
       <TouchableOpacity style={styles.button} onPress={handlePasswordReset}>
         <Text style={styles.buttonText}>Entregar</Text>
       </TouchableOpacity>
+
+      <Pressable onPress={() => {'Contraseña'}}>
+      <Text style={styles.signUpText}> ¿Olvidaste tu contraseña? <Text style={styles.signUpLink}>Sign Up</Text></Text>
+      </Pressable>
     </View>
   );
 }
