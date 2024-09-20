@@ -25,6 +25,11 @@ const styles = StyleSheet.create({
       backgroundColor: '#f0f0f0', // Color de fondo
     },
     image: {
+      flex: 1,
+      width: null,
+      height: null,
+      resizeMode: 'cover',
+    },
     titulo: {
       fontSize: 24,
       fontWeight: 'bold',
