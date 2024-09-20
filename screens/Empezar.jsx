@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
       justifyContent: 'center',
       backgroundColor: '#f0f0f0', // Color de fondo
     },
+    image: {
     titulo: {
       fontSize: 24,
       fontWeight: 'bold',
