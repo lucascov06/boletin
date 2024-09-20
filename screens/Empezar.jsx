@@ -15,3 +15,22 @@ const Empezar = () => {
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+
+    container: {
+      flex: 1,
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundColor: '#f0f0f0', // Color de fondo
+    },
+    titulo: {
+      fontSize: 24,
+      fontWeight: 'bold',
+      marginTop: 20,
+    },
+    texto: {
+      fontSize: 18,
+      textAlign: 'center',
+      marginTop: 10,
+    },
