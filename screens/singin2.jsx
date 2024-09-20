@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet, Pressable, Image, Icon } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
+
 const Singinprofesor = () => {
   const [email, setEmail] = useState('');
   const [idProfesor, setidProfesor] = useState('');
