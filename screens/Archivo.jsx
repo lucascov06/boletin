@@ -44,6 +44,13 @@ const ArchivoScreen = () => {
             <TouchableOpacity style={styles.loginButton}>
                 <Text style={styles.loginButtonText}>Ingresar</Text>
             </TouchableOpacity>
+            
+            
+
+         <Pressable 
+         style={styles.loginButton}onPress={() => navigation.navigate('Empezar')}>
+        <Text style={styles.loginButtonText}>Ingresar</Text>
+      </Pressable>
 
             <Text style={styles.orText}>- O continuar con -</Text>
 
