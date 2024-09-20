@@ -5,7 +5,6 @@ export default function ForgotPasswordScreen() {
   const [email, setEmail] = useState('');
 
   const handlePasswordReset = () => {
-    // Aquí manejarás el envío del correo para restablecer la contraseña
     console.log('Email para restablecer la contraseña:', email);
   };
 
@@ -20,5 +19,12 @@ export default function ForgotPasswordScreen() {
         keyboardType="email-address"
         autoCapitalize="none"
       />
+      <Text style={styles.description}>
+        Le enviaremos un mensaje para configurar o restablecer su nueva contraseña.
+      </Text>
+      <TouchableOpacity style={styles.button} onPress={handlePasswordReset}>
+        <Text style={styles.buttonText}>Entregar</Text>
+      </TouchableOpacity>
+    </View>
   );
 }
