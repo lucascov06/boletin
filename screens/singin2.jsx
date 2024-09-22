@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet, Pressable, Image, Icon } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
+
 
 const Singinprofesor = () => {
   const [email, setEmail] = useState('');
@@ -67,10 +69,21 @@ const Singinprofesor = () => {
                         source={{ uri: 'https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg' }} 
                     />
                 </Pressable>
+
             </View>
-      <Pressable onPress={() => {'Archivo'}}>
-      <Text style={styles.signUpText}>Crea una cuenta <Text style={styles.signUpLink}>Sign Up</Text></Text>
+      
+
+
+      <View>
+      <Text style={styles.signUpText}>Crea una Cuenta.
+        
+        </Text>
+      
+
+      <Pressable onPress={() => navigation.navigate('Crear')}>
+        <Text style={styles.signUpLink}>Sign Up</Text>
       </Pressable>
+    </View>   
     </View>
   );
 };
