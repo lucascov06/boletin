@@ -80,9 +80,10 @@ const Archivo = () => {
             </View>
 
             <Pressable >
-                <Text style={styles.signUpText}onPress={() => navigation.navigate('singin')}>Crea una cuenta <Text style={styles.signUpLink}>Sign Up</Text></Text>
+                <Text style={styles.signUpText}onPress={() => navigation.navigate('Crear')}>Crea una cuenta <Text style={styles.signUpLink}>Sign Up</Text></Text>
              </Pressable>
             
+          
           
         </View>
     );
