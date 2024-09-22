@@ -88,9 +88,16 @@ const Crear = () => {
                 </TouchableOpacity>
             </View>
 
-            <Pressable >
-                <Text style={styles.signUpText}onPress={() => navigation.navigate('singin')}>Crea una cuenta <Text style={styles.signUpLink}>Sign Up</Text></Text>
+            <View>
+      
+      
+
+        <Pressable >
+                <Text style={styles.signUpText}onPress={() => navigation.navigate('Archivo')}>Ya tengo una cuenta <Text style={styles.signUpLink}>Acceso</Text></Text>
              </Pressable>
+
+      
+    </View>   
             
           
         </View>
