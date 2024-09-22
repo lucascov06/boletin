@@ -52,6 +52,7 @@ const Crear = () => {
                 </TouchableOpacity>
             </View>
             
+            
            
             <Text style={styles.tex}>Al hacer click en el boton Registrarse,acepta la oferta publica.</Text>
 
@@ -96,3 +97,4 @@ const Crear = () => {
     );
 };
 
+const styles = StyleSheet.create({
