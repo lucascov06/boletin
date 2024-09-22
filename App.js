@@ -8,6 +8,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Singinprofesor from './screens/singin2.jsx';
 import Empezar from './screens/Empezar.jsx';
 import Archivo from './screens/Archivo.jsx';
+import Contraseña from './screens/Contraseña.jsx';
+import Crear from './screens/Crear.jsx';
 
 const Stack = createStackNavigator();
 const App = () => {
@@ -16,7 +18,9 @@ const App = () => {
     <Stack.Navigator initialRouteName="Boletin Virtual">
       <Stack.Screen name="Login" component={LoginScreen} />
       <Stack.Screen name="Archivo" component={Archivo} />
+      <Stack.Screen name="Crear" component={Crear} />
       <Stack.Screen name="Singin" component={Singin} />
+      <Stack.Screen name="Contraseña" component={Contraseña} />
       <Stack.Screen name="Empezar" component={Empezar} />
       <Stack.Screen name="Singinprofesor" component={Singinprofesor} />
 
