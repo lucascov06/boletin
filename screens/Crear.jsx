@@ -98,3 +98,86 @@ const Crear = () => {
 };
 
 const styles = StyleSheet.create({
+    tex: {
+    marginBottom:5,
+    },
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#fff',
+        paddingHorizontal: 20,
+    },
+    title: {
+        fontSize: 24,
+        fontWeight: 'bold',
+        marginBottom: 20,
+    },
+    input: {
+        width: '100%',
+        height: 50,
+        borderColor: '#C7C7CD',
+        borderWidth: 1,
+        borderRadius: 10,
+        paddingHorizontal: 15,
+        marginBottom: 15,
+    },
+    passwordContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        width: '100%',
+        height: 50,
+        borderColor: '#C7C7CD',
+        borderWidth: 1,
+        borderRadius: 10,
+        paddingHorizontal: 15,
+        marginBottom: 15,
+    },
+    passwordInput: {
+        flex: 1,  
+    },
+    forgotPassword: {
+        alignSelf: 'flex-end',
+        color: '#F46D6D',
+        marginBottom: 30,
+    },
+    loginButton: {
+        width: '100%',
+        height: 50,
+        backgroundColor: '#F0466D',
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 10,
+        marginBottom: 20,
+    },
+    loginButtonText: {
+        color: '#fff',
+        fontSize: 18,
+        fontWeight: 'bold',
+    },
+    orText: {
+        fontSize: 14,
+        color: '#8A8A8A',
+        marginBottom: 20,
+    },
+    socialButtons: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        width: '80%',
+        marginBottom: 20,
+    },
+    socialIcon: {
+        width: 40,
+        height: 40,
+        resizeMode: 'contain', 
+    },
+    signUpText: {
+        fontSize: 14,
+        color: '#8A8A8A',
+    },
+    signUpLink: {
+        color: '#F0466D',
+    },
+});
+
+export default Crear;
