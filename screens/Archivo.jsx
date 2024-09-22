@@ -40,9 +40,13 @@ const Archivo = () => {
                 </TouchableOpacity>
             </View>
             
-            <TouchableOpacity>
-                <Text style={styles.forgotPassword}>¿Olvidaste tu contraseña?</Text>
-            </TouchableOpacity>
+            
+            <Pressable 
+         onPress={() => navigation.navigate('Contraseña')}>
+        <Text style={styles.forgotPassword}>¿Olvidaste tu contraseña?</Text>
+      </Pressable>
+
+
 
             
             
@@ -75,9 +79,11 @@ const Archivo = () => {
                 </TouchableOpacity>
             </View>
 
-            <TouchableOpacity>
-                <Text style={styles.signUpText}>Crea una cuenta <Text style={styles.signUpLink}>Sign Up</Text></Text>
-            </TouchableOpacity>
+            <Pressable >
+                <Text style={styles.signUpText}onPress={() => navigation.navigate('singin')}>Crea una cuenta <Text style={styles.signUpLink}>Sign Up</Text></Text>
+             </Pressable>
+            
+          
         </View>
     );
 };
