@@ -25,7 +25,7 @@ const LoginScreen = () => {
     <Text style={styles.subtitle}>¿No tienes cuenta?</Text>
 
 
-      <Pressable style={styles.buttonSecondary}onPress={() => navigation.navigate('Singin')}>
+      <Pressable style={styles.buttonSecondary}onPress={() => navigation.navigate('Crear')}>
         <Text style={styles.buttonText}>Crear cuenta</Text>
       </Pressable>
 
