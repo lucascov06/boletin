@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Pressable } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+
+
 export default function Contraseña() {
   const [email, setEmail] = useState('');
   const navigation = useNavigation(); 
-  const Contraseña = () => {
+  const handlePasswordReset = () => {
     console.log('Email para restablecer la contraseña:', email);
   };
 
@@ -22,7 +24,7 @@ export default function Contraseña() {
       <Text style={styles.description}>
         Le enviaremos un mensaje para configurar o restablecer su nueva contraseña.
       </Text>
-      <TouchableOpacity style={styles.button} onPress={Contraseña}>
+      <TouchableOpacity style={styles.button} onPress={handlePasswordReset}>
         <Text style={styles.buttonText}>Entregar</Text>
       </TouchableOpacity>
       
