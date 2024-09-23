@@ -29,9 +29,21 @@ export default function Contraseña() {
       </TouchableOpacity>
       
 
-      <Pressable onPress={() => {'Contraseña'}}>
-      <Text style={styles.signUpText}> ¿Olvidaste tu contraseña? <Text style={styles.signUpLink}>Sign Up</Text></Text>
-      </Pressable>
+      
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 20,
+    justifyContent: 'center',
+    backgroundColor: '#fff',
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 20,
+    textAlign: 'center',
+  },
