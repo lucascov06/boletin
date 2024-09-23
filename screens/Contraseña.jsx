@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput,Pressable, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, Pressable } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 export default function Contraseña() {
-  
   const [email, setEmail] = useState('');
   const navigation = useNavigation(); 
   const Contraseña = () => {
@@ -26,6 +25,7 @@ export default function Contraseña() {
       <TouchableOpacity style={styles.button} onPress={Contraseña}>
         <Text style={styles.buttonText}>Entregar</Text>
       </TouchableOpacity>
+      
 
       <Pressable onPress={() => {'Contraseña'}}>
       <Text style={styles.signUpText}> ¿Olvidaste tu contraseña? <Text style={styles.signUpLink}>Sign Up</Text></Text>

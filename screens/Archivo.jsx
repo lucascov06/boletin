@@ -41,12 +41,12 @@ const Archivo = () => {
             </View>
             
             
-            <Pressable 
-         onPress={() => navigation.navigate('Contraseña')}>
-        <Text style={styles.forgotPassword}>¿Olvidaste tu contraseña?</Text>
-      </Pressable>
+         
 
-
+      <Pressable >
+                <Text style={styles.signUpLinkt}onPress={() => navigation.navigate('Contraseña')}>¿Olvidaste tu contraseña?</Text>
+             </Pressable>
+            
 
             
             
