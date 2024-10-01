@@ -22,3 +22,6 @@ const styles = StyleSheet.create({
     },
   });
 export default Singinprofesor;
+
+//const styles = StyleSheet.create.({
+  
