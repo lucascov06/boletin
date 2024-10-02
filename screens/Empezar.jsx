@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
  
   texto: {
     fontSize: 25,
-    color: '#fff', // Texto en blanco para mejor contraste
+    color: '#fff',
     textAlign: 'center',
     marginBottom: 20,
     marginTop: 100, 
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     alignItems: 'center',
     width: '80%',
-    marginTop: 100, // Ajusta este valor para mover el botón más abajo
+    marginTop: 100, 
   },
   
   textoBoton: {
