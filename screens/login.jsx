@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   logo: {
     width: 209, 
     height: 53, 
-    marginBottom: 20,
+    marginBottom: 21,
   },
 
   title: {
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     color: '#00000',
     fontWeight: 'bold',
     textAlign: 'center',
-    marginBottom: 20,
+    marginBottom: 21,
   },
 
   buttonPrimary: {
