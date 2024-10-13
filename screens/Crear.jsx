@@ -58,12 +58,22 @@ const Crear = () => {
 
 
             
-            
 
-         <Pressable 
-         style={styles.loginButton}onPress={() => navigation.navigate('Empezar')}>
-        <Text style={styles.loginButtonText}>Ingresar</Text>
-      </Pressable>
+
+            <Pressable 
+  style={styles.loginButton}
+  onPress={() => {
+    navigation.reset({
+      index: 0,
+      routes: [{ name: 'Empezar' }], 
+    });
+  }}>
+  <Text style={styles.loginButtonText}>Ingresar</Text>
+</Pressable>
+
+
+
+         
 
             <Text style={styles.orText}>- O continuar con -</Text>
 
