@@ -45,7 +45,7 @@ const Singinprofesor = () => {
   <Text style={styles.forgotPassword}>¿Olvidaste tu contraseña?</Text>
 </Pressable>
 
-      <Pressable style={styles.loginButton} onPress={handleLogin}>
+      <Pressable style={styles.loginButton} onPress={() => navigation.navigate('Empezar')}>
         <Text style={styles.loginButtonText}>Ingresar</Text>
       </Pressable>
 
