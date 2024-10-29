@@ -8,6 +8,7 @@ const Singinprofesor = () => {
   const [email, setEmail] = useState('');
   const [idProfesor, setidProfesor] = useState('');
   const [error, setError] = useState(null);
+  const navigation = useNavigation();
 
   const handleLogin = () => {
     if (email === 'thiagoejemplo@gmail.com' && idProfesor === '3312') {
