@@ -41,9 +41,9 @@ const Singinprofesor = () => {
       />
       {error && <Text style={styles.error}>{error}</Text>}
 
-      <Pressable onPress={() => {/* Manejar recuperación de contraseña */}}>
-        <Text style={styles.forgotPassword}>¿Olvidaste tu contraseña?</Text>
-      </Pressable>
+      <Pressable onPress={() => navigation.navigate('Contraseña')}>
+  <Text style={styles.forgotPassword}>¿Olvidaste tu contraseña?</Text>
+</Pressable>
 
       <Pressable style={styles.loginButton} onPress={handleLogin}>
         <Text style={styles.loginButtonText}>Ingresar</Text>
