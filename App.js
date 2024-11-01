@@ -10,6 +10,7 @@ import Empezar from './screens/Empezar.jsx';
 import Archivo from './screens/Archivo.jsx';
 import Contraseña from './screens/Contraseña.jsx';
 import Crear from './screens/Crear.jsx';
+import HomeScreen from './screens/Home.jsx';
 
 const Stack = createStackNavigator();
 const App = () => {
@@ -22,7 +23,9 @@ const App = () => {
       <Stack.Screen name="Singin" component={Singin} />
       <Stack.Screen name="Contraseña" component={Contraseña} />
       <Stack.Screen name="Empezar" component={Empezar} />
+      <Stack.Screen name="HomeScreen" component={HomeScreen} />
       <Stack.Screen name="Singinprofesor" component={Singinprofesor} />
+
 
     </Stack.Navigator>
   </NavigationContainer>
