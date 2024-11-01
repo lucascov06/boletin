@@ -1,6 +1,8 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet,Pressable, TouchableOpacity } from 'react-native';
 
+import { useNavigation } from '@react-navigation/native';
+import HomeScreen from './Home';
 const Empezar = () => {
   return (
     <View style={styles.container}>
