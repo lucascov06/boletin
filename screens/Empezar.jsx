@@ -4,14 +4,18 @@ import { View, Text, Image, StyleSheet,Pressable, TouchableOpacity } from 'react
 import { useNavigation } from '@react-navigation/native';
 import HomeScreen from './Home';
 const Empezar = () => {
+  const navigation = useNavigation(); 
   return (
     <View style={styles.container}>
+      <View style={styles.container}>
       <Image source={require('../assets/fondo-pantalla-empezar.png')} style={styles.image} />
       <View style={styles.overlay}>
        
         <Text style={styles.texto}>¡Ya puedes ver tu información académica!</Text>
         <TouchableOpacity style={styles.boton}>
           <Text style={styles.textoBoton}>Empezar</Text>
+          <Pressable onPress={() => navigation.navigate('/screens/Home.jsx')}>
+      </Pressable>
         </TouchableOpacity>
         
         
