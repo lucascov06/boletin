@@ -31,9 +31,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   image: {
-    position: 'absolute',
-    width: '100%',
-    height: '100%',
+    position: 'relative',
+    width: '60%',
+    height: '60%',
     resizeMode: 'cover',
   },
   overlay: {
@@ -65,4 +65,5 @@ const styles = StyleSheet.create({
 });
 
 export default Empezar;
+export default HomeScreen;
 
