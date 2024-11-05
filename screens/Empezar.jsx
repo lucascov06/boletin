@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet, Pressable, TouchableOpacity } from 'react-native';
+import { View, Text, Image, StyleSheet, Pressable,} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import HomeScreen from '../screens/Home.jsx';
 const Empezar = () => {
