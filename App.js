@@ -2,7 +2,7 @@
 import React from 'react';
 import LoginScreen from '../boletin/screens/login.jsx';
 
-import Singin from './singin.jsx';
+import Singin from './screens/Archivo.jsx';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Singinprofesor from './screens/singin2.jsx';
