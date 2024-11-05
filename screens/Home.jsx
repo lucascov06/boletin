@@ -20,7 +20,7 @@ return (
         </View>
     </View>
 
-    <ScrollView horizontal style={styles.categories}>
+    <ScrollView horizontal style={styles.categories} contentContainerStyle={{flexGrow: 1}}>
         {['Tercer Trimestre', 'Profesores', 'Escuela'].map((item, index) => ( // Solo hacemos el ultimo trimestre
         <View key={index} style={styles.category}>
             <Text>{item}</Text>
@@ -30,7 +30,7 @@ return (
 
     <View style={styles.card}>
         <Image
-        source={{ uri: '/assets/logo.png' }}
+        
         style={styles.cardImage}
         />
         <Text style={styles.cardText}>Con Esfuerzo se Logran Resultados</Text>
@@ -87,14 +87,15 @@ container: {
     },
     categories: { 
         flexDirection: 'row', 
-        marginBottom: 14, 
-        width: 150, 
+        
     },
     category: { 
-        marginHorizontal: 8, 
-        padding: 8, 
-        backgroundColor: '#e0e0e0', 
-        borderRadius: 16 
+        flex:1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginHorizontal: 5,
+        padding: 20,
+        borderRadius: 10,
     },
     card: { 
         alignItems: 'center', 
