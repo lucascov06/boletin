@@ -86,3 +86,15 @@ const Perfil = ({ navigation }) => {
           </Picker>
         </View>
 
+        <TouchableOpacity style={styles.saveButton} onPress={handleSave}>
+          <Text style={styles.saveButtonText}>Guardar</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.logoutButton} onPress={handleLogout}>
+          <Text style={styles.logoutButtonText}>Cerrar Sesión</Text>
+        </TouchableOpacity>
+      </ScrollView>
+    </View>
+  );
+};
+
