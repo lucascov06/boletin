@@ -2,8 +2,8 @@ import React from 'react';
 import { View, Text, Pressable, StyleSheet, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import Archivo from './Archivo';
-import Singin from '../singin';
-import Singinprofesor from '../singin2';
+import Singin from '../screens/Archivo';
+import Singinprofesor from '../screens/singin2';
 const LoginScreen = () => {
 
   const navigation = useNavigation(); 

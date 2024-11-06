@@ -8,6 +8,7 @@ const Singinprofesor = () => {
   const [email, setEmail] = useState('');
   const [idProfesor, setidProfesor] = useState('');
   const [error, setError] = useState(null);
+  const navigation = useNavigation();
 
   const handleLogin = () => {
     if (email === 'thiagoejemplo@gmail.com' && idProfesor === '3312') {
@@ -40,11 +41,11 @@ const Singinprofesor = () => {
       />
       {error && <Text style={styles.error}>{error}</Text>}
 
-      <Pressable onPress={() => {/* Manejar recuperación de contraseña */}}>
-        <Text style={styles.forgotPassword}>¿Olvidaste tu contraseña?</Text>
-      </Pressable>
+      <Pressable onPress={() => navigation.navigate('Contraseña')}>
+  <Text style={styles.forgotPassword}>¿Olvidaste tu contraseña?</Text>
+</Pressable>
 
-      <Pressable style={styles.loginButton} onPress={handleLogin}>
+      <Pressable style={styles.loginButton} onPress={() => navigation.navigate('Empezar')}>
         <Text style={styles.loginButtonText}>Ingresar</Text>
       </Pressable>
 
