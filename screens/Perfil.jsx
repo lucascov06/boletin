@@ -132,6 +132,11 @@ const Perfil = ({ navigation }) => {
           visible={modalVisible}
           onRequestClose={cancelLogout}
         >
+          <View style={styles.modalContainer}>
+            <View style={styles.modalContent}>
+              <Text style={styles.modalText}>¿Seguro que quiere cerrar su sesión?</Text>
+              <View style={styles.modalButtonsContainer}>
+                <TouchableOpacity style={styles.modalButton} onPress={confirmLogout}>
       </ScrollView>
     </View>
   );
