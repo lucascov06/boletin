@@ -124,6 +124,14 @@ const Perfil = ({ navigation }) => {
         <TouchableOpacity style={styles.logoutButton} onPress={handleLogout}>
           <Text style={styles.logoutButtonText}>Cerrar Sesión</Text>
         </TouchableOpacity>
+
+        
+        <Modal
+          animationType="fade"
+          transparent={true}
+          visible={modalVisible}
+          onRequestClose={cancelLogout}
+        >
       </ScrollView>
     </View>
   );
