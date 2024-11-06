@@ -235,6 +235,26 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     width: '80%',
   },
+  modalText: {
+    fontSize: 18,
+    marginBottom: 20,
+    textAlign: 'center',
+  },
+  modalButtonsContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  modalButton: {
+    backgroundColor: '#000',
+    padding: 10,
+    borderRadius: 8,
+    marginHorizontal: 5,
+  },
+  modalButtonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
 });
 
 export default Perfil;
