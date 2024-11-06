@@ -18,3 +18,30 @@ const Perfil = ({ navigation }) => {
     navigation.navigate('Login');
   };
 
+  return (
+    <View style={styles.outerContainer}>
+      <ScrollView contentContainerStyle={styles.container}>
+        <Text style={styles.title}>Perfil</Text>
+        
+        <View style={styles.section}>
+          <Text style={styles.label}>Detalles Personales</Text>
+          <TextInput
+            style={styles.input}
+            value={email}
+            onChangeText={setEmail}
+            placeholder="Ingrese su email"
+            placeholderTextColor="#8A8A8A"
+          />
+          <TextInput
+            style={styles.input}
+            value={password}
+            onChangeText={setPassword}
+            placeholder="Ingrese su contraseña"
+            placeholderTextColor="#8A8A8A"
+            secureTextEntry
+          />
+          <TouchableOpacity>
+            <Text style={styles.changePassword}>Cambiar contraseña</Text>
+          </TouchableOpacity>
+        </View>
+
