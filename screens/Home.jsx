@@ -1,22 +1,27 @@
-import React from 'react';
+import React from 'react'; 
 import { View, Text, Image, TouchableOpacity, ScrollView, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
-import Perfil from './Perfil';
 
 function HomeScreen() {
     const navigation = useNavigation();
 
     return (
         <View style={styles.container}>
+            <View style={styles.logoContainer}>
+                <Image 
+                    source={require('../assets/logo.png')} 
+                    style={styles.logo}
+                    resizeMode="contain"
+                />
+            </View>
+
             <View style={styles.header}>
                 <Icon name="menu" size={28} />
-                
-                {/* Envolver la imagen de perfil en TouchableOpacity */}
                 <TouchableOpacity onPress={() => navigation.navigate('Perfil')}>
                     <Image 
                         source={{ uri: '/assets/perfil.png' }} 
-                        style={styles.profileImage}
+                        style={styles.perfilImagen}
                     />
                 </TouchableOpacity>
             </View>
@@ -29,17 +34,17 @@ function HomeScreen() {
                 </View>
             </View>
 
-            <ScrollView horizontal style={styles.categories} contentContainerStyle={{ flexGrow: 1}}>
+            <ScrollView horizontal style={styles.a} contentContainerStyle={{ flexGrow: 1 }}>
                 {['Tercer Trimestre', 'Profesores', 'Escuela'].map((item, index) => (
-                    <View key={index} style={[styles.category, {backgroundColor: '#007bff', marginHorizontal:10}]}>
-                        <Text>{item}</Text>
-                    </View>
+                    <TouchableOpacity 
+                        key={index} 
+                        style={styles.categoria} 
+                        onPress={() => handlecategoriaPress(item)}
+                    >
+                        <Text style={styles.categoriaText}>{item}</Text>
+                    </TouchableOpacity>
                 ))}
             </ScrollView>
-
-            <View style={styles.card}>
-                <Text style={styles.cardText}>Con Esfuerzo se Logran Resultados</Text>
-            </View>
 
             <TouchableOpacity style={styles.button}>
                 <Text style={styles.buttonText}>Revisa tu Boletin</Text>
@@ -60,13 +65,21 @@ const styles = StyleSheet.create({
         padding: 16, 
         backgroundColor: '#fff'
     },
+    logoContainer: {
+        alignItems: 'center',
+        marginBottom: 10, 
+    },
+    logo: {
+        width: 180, 
+        height: 80, 
+    },
     header: { 
         flexDirection: 'row', 
         alignItems: 'center', 
         justifyContent: 'space-between', 
-        padding: 16 
+        paddingVertical: 10 
     },
-    profileImage: { 
+    perfilImagen: { 
         width: 32, 
         height: 32, 
         borderRadius: 16 
@@ -74,7 +87,7 @@ const styles = StyleSheet.create({
     searchFilterContainer: { 
         flexDirection: 'row', 
         justifyContent: 'space-between', 
-        marginVertical: 16 
+        marginVertical: 10 
     },
     searchText: { 
         fontSize: 24, 
@@ -86,42 +99,26 @@ const styles = StyleSheet.create({
     icon: { 
         marginHorizontal: 8 
     },
-    categories: { 
-        flexDirection: 'row', 
-        backgroundColor: '#f5f5f5',
-        paddingHorizontal:10,
-    },
-    category: { 
-        flex:1,
+    categoria: { 
+        width: 60, 
+        height: 60, 
         justifyContent: 'center',
         alignItems: 'center',
+        backgroundColor: '#007bff',
+        borderRadius: 30, 
         marginHorizontal: 5,
-        padding: 20,
-        borderRadius: 10,
     },
-    card: { 
-        alignItems: 'center', 
-        marginBottom: 16 
-    },
-    cardImage: { 
-        width: '20%', 
-        height: 65, 
-        borderRadius: 16, 
-        position: 'relative', 
-        top: -330 
-    },
-    cardText: { 
-        position: 'absolute', 
+    categoriaText: { 
         color: 'white', 
-        fontSize: 20, 
-        fontWeight: 'bold', 
-        top: '40%' 
+        fontSize: 10, 
+        textAlign: 'center'
     },
     button: { 
         backgroundColor: '#007bff', 
         padding: 16, 
         borderRadius: 8, 
-        alignItems: 'center' 
+        alignItems: 'center', 
+        marginTop: 10 
     },
     buttonText: { 
         color: '#fff', 
