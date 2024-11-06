@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, ScrollView, Picker, Image } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, ScrollView, Picker, Image, Modal } from 'react-native';
 import { launchImageLibrary } from 'react-native-image-picker';
 
 const Perfil = ({ navigation }) => {
@@ -10,6 +10,7 @@ const Perfil = ({ navigation }) => {
   const [ciudad, setCiudad] = useState('');
   const [pais, setPais] = useState('');
   const [profileImage, setProfileImage] = useState(null);
+  const [modalVisible, setModalVisible] = useState(false);
 
   const handleSave = () => {
     navigation.navigate('HomeScreen');
