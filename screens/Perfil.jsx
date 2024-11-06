@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, ScrollView, Picker } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, ScrollView, Picker, Image } from 'react-native';
+import { launchImageLibrary } from 'react-native-image-picker';
 
 const Perfil = ({ navigation }) => {
   const [email, setEmail] = useState('luca.ejemplo@gmail.com');
@@ -8,9 +9,9 @@ const Perfil = ({ navigation }) => {
   const [domicilio, setDomicilio] = useState('');
   const [ciudad, setCiudad] = useState('');
   const [pais, setPais] = useState('');
+  const [profileImage, setProfileImage] = useState(null);
 
   const handleSave = () => {
-    // Navegar a la pantalla Home
     navigation.navigate('HomeScreen');
   };
 
