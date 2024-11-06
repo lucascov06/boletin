@@ -29,9 +29,9 @@ function HomeScreen() {
                 </View>
             </View>
 
-            <ScrollView horizontal style={styles.categories}>
+            <ScrollView horizontal style={styles.categories} contentContainerStyle={{ flexGrow: 1}}>
                 {['Tercer Trimestre', 'Profesores', 'Escuela'].map((item, index) => (
-                    <View key={index} style={styles.category}>
+                    <View key={index} style={[styles.category, {backgroundColor: '#FFD700', marginHorizontal:10}]}>
                         <Text>{item}</Text>
                     </View>
                 ))}
@@ -92,8 +92,8 @@ const styles = StyleSheet.create({
     },
     categories: { 
         flexDirection: 'row', 
-        marginBottom: 14, 
-        width: 150 
+        backgroundColor: '#f5f5f5',
+        paddingHorizontal:10,
     },
     category: { 
         flex:1,
