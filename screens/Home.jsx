@@ -15,7 +15,7 @@ function HomeScreen() {
                 {/* Envolver la imagen de perfil en TouchableOpacity */}
                 <TouchableOpacity onPress={() => navigation.navigate('Perfil')}>
                     <Image 
-                        source={{ uri: '/assets/logo.png' }} 
+                        source={{ uri: '/assets/perfil.png' }} 
                         style={styles.profileImage}
                     />
                 </TouchableOpacity>
