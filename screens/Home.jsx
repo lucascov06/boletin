@@ -1,70 +1,74 @@
 import React from 'react';
-import { View, Text, Image, TouchableOpacity, ScrollView, StyleSheet,Pressable } from 'react-native';
+import { View, Text, Image, TouchableOpacity, ScrollView, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
+import { useNavigation } from '@react-navigation/native';
+import Perfil from './Perfil';
+
 function HomeScreen() {
-return (
-    <View style={styles.container}>
-    <View style={styles.header}>
-        <Icon name="menu" size={28} />
-        <Image 
-        source={{ uri: '/assets/logo.png' }} 
-        style={styles.profileImage}
-        />
-    </View>
+    const navigation = useNavigation();
 
-    <View style={styles.searchFilterContainer}>
-        <Text style={styles.searchText}>Boletin</Text>
-        <View style={styles.sortFilter}>
-        <Icon name="funnel" size={20} style={styles.icon} />
-        <Icon name="options" size={20} style={styles.icon} />
+    return (
+        <View style={styles.container}>
+            <View style={styles.header}>
+                <Icon name="menu" size={28} />
+                
+                {/* Envolver la imagen de perfil en TouchableOpacity */}
+                <TouchableOpacity onPress={() => navigation.navigate('Perfil')}>
+                    <Image 
+                        source={{ uri: '/assets/logo.png' }} 
+                        style={styles.profileImage}
+                    />
+                </TouchableOpacity>
+            </View>
+
+            <View style={styles.searchFilterContainer}>
+                <Text style={styles.searchText}>Boletin</Text>
+                <View style={styles.sortFilter}>
+                    <Icon name="funnel" size={20} style={styles.icon} />
+                    <Icon name="options" size={20} style={styles.icon} />
+                </View>
+            </View>
+
+            <ScrollView horizontal style={styles.categories}>
+                {['Tercer Trimestre', 'Profesores', 'Escuela'].map((item, index) => (
+                    <View key={index} style={styles.category}>
+                        <Text>{item}</Text>
+                    </View>
+                ))}
+            </ScrollView>
+
+            <View style={styles.card}>
+                <Image
+                    source={{ uri: '/assets/logo.png' }}
+                    style={styles.cardImage}
+                />
+                <Text style={styles.cardText}>Con Esfuerzo se Logran Resultados</Text>
+            </View>
+
+            <TouchableOpacity style={styles.button}>
+                <Text style={styles.buttonText}>Revisa tu Boletin</Text>
+                <Text style={styles.subtext}>Hace 24hs se entregó</Text>
+            </TouchableOpacity>
+
+            <View style={styles.footer}>
+                <Icon name="search" size={28} />
+                <Icon name="home" size={28} color="red" />
+            </View>
         </View>
-    </View>
-
-    <ScrollView horizontal style={styles.categories} contentContainerStyle={{flexGrow: 1}}>
-        {['Tercer Trimestre', 'Profesores', 'Escuela'].map((item, index) => ( // Solo hacemos el ultimo trimestre
-        <View key={index} style={styles.category}>
-            <Text>{item}</Text>
-        </View>
-        ))}
-    </ScrollView>
-
-    <View style={styles.card}>
-        <Image
-        
-        style={styles.cardImage}
-        />
-        <Text style={styles.cardText}>Con Esfuerzo se Logran Resultados</Text>
-    </View>
-
-
-    <TouchableOpacity style={styles.button}>
-        <Text style={styles.buttonText}>Revisa tu Boletin</Text>
-        <Text style={styles.subtext}>Hace 24hs se entregó</Text>
-    </TouchableOpacity>
-
-    <View style={styles.footer}>
-        <Icon name="search" size={28} />
-        <Icon name="home" size={28} color="red" />
-    </View>
-    </View>
-);
+    );
 }
 
 const styles = StyleSheet.create({
-container: { 
-    flex: 1, 
-    padding: 16, 
-    backgroundColor: '#fff'
-},
+    container: { 
+        flex: 1, 
+        padding: 16, 
+        backgroundColor: '#fff'
+    },
     header: { 
         flexDirection: 'row', 
         alignItems: 'center', 
         justifyContent: 'space-between', 
         padding: 16 
-    },
-    headerTitle: { 
-        fontSize: 20, 
-        fontWeight: 'bold' 
     },
     profileImage: { 
         width: 32, 
@@ -74,7 +78,8 @@ container: {
     searchFilterContainer: { 
         flexDirection: 'row', 
         justifyContent: 'space-between', 
-        marginVertical: 16 },
+        marginVertical: 16 
+    },
     searchText: { 
         fontSize: 24, 
         fontWeight: 'bold' 
@@ -87,7 +92,8 @@ container: {
     },
     categories: { 
         flexDirection: 'row', 
-        
+        marginBottom: 14, 
+        width: 150 
     },
     category: { 
         flex:1,
@@ -140,4 +146,3 @@ container: {
 });
 
 export default HomeScreen;
-
