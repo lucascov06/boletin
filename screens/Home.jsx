@@ -6,6 +6,17 @@ import { useNavigation } from '@react-navigation/native';
 function HomeScreen() {
     const navigation = useNavigation();
 
+    const handlecategoriaPress = (categoria) => {
+        
+        if (categoria === 'Tercer Trimestre') {
+            navigation.navigate('TercerTrimestreScreen');
+        } else if (categoria === 'Profesores') {
+            navigation.navigate('ProfesoresScreen');
+        } else if (categoria === 'Escuela') {
+            navigation.navigate('EscuelaScreen');
+        }
+    };
+
     return (
         <View style={styles.container}>
             <View style={styles.logoContainer}>
