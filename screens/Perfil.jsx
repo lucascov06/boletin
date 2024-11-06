@@ -137,6 +137,15 @@ const Perfil = ({ navigation }) => {
               <Text style={styles.modalText}>¿Seguro que quiere cerrar su sesión?</Text>
               <View style={styles.modalButtonsContainer}>
                 <TouchableOpacity style={styles.modalButton} onPress={confirmLogout}>
+                  <Text style={styles.modalButtonText}>Cerrar Sesión</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.modalButton} onPress={cancelLogout}>
+                  <Text style={styles.modalButtonText}>Cancelar</Text>
+                </TouchableOpacity>
+              </View>
+            </View>
+          </View>
+        </Modal>
       </ScrollView>
     </View>
   );
