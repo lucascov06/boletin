@@ -19,6 +19,18 @@ const Perfil = ({ navigation }) => {
     navigation.navigate('Login');
   };
 
+  const selectProfileImage = () => {
+    launchImageLibrary({ mediaType: 'photo' }, (response) => {
+      if (response.didCancel) {
+        console.log('User cancelled image picker');
+      } else if (response.error) {
+        console.log('ImagePicker Error: ', response.error);
+      } else {
+        setProfileImage(response.assets[0].uri);
+      }
+    });
+  };
+
   return (
     <View style={styles.outerContainer}>
       <ScrollView contentContainerStyle={styles.container}>
