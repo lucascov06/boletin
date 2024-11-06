@@ -9,3 +9,12 @@ const Perfil = ({ navigation }) => {
   const [ciudad, setCiudad] = useState('');
   const [pais, setPais] = useState('');
 
+  const handleSave = () => {
+    // Navegar a la pantalla Home
+    navigation.navigate('HomeScreen');
+  };
+
+  const handleLogout = () => {
+    navigation.navigate('Login');
+  };
+
