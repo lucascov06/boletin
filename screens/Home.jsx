@@ -31,7 +31,7 @@ function HomeScreen() {
 
             <ScrollView horizontal style={styles.categories} contentContainerStyle={{ flexGrow: 1}}>
                 {['Tercer Trimestre', 'Profesores', 'Escuela'].map((item, index) => (
-                    <View key={index} style={[styles.category, {backgroundColor: '#FFD700', marginHorizontal:10}]}>
+                    <View key={index} style={[styles.category, {backgroundColor: '#007bff', marginHorizontal:10}]}>
                         <Text>{item}</Text>
                     </View>
                 ))}
