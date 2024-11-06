@@ -17,7 +17,16 @@ const Perfil = ({ navigation }) => {
   };
 
   const handleLogout = () => {
-    navigation.navigate('Login');
+    setModalVisible(true); 
+  };
+
+  const confirmLogout = () => {
+    setModalVisible(false);
+    navigation.navigate('Login'); 
+  };
+
+  const cancelLogout = () => {
+    setModalVisible(false); 
   };
 
   const selectProfileImage = () => {
