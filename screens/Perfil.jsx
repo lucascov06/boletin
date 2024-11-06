@@ -35,7 +35,15 @@ const Perfil = ({ navigation }) => {
     <View style={styles.outerContainer}>
       <ScrollView contentContainerStyle={styles.container}>
         <Text style={styles.title}>Perfil</Text>
-        
+
+        {/* Imagen de perfil */}
+        <TouchableOpacity onPress={selectProfileImage}>
+          <Image
+            source={profileImage ? { uri: profileImage } : require('../assets/perfil.png')}
+            style={styles.profileImage}
+          />
+        </TouchableOpacity>
+
         <View style={styles.section}>
           <Text style={styles.label}>Detalles Personales</Text>
           <TextInput
