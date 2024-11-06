@@ -38,10 +38,6 @@ function HomeScreen() {
             </ScrollView>
 
             <View style={styles.card}>
-                <Image
-                    source={{ uri: '/assets/logo.png' }}
-                    style={styles.cardImage}
-                />
                 <Text style={styles.cardText}>Con Esfuerzo se Logran Resultados</Text>
             </View>
 
