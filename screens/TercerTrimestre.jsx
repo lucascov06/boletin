@@ -24,3 +24,28 @@ function Trimestre() {
            
             
         </View>
+
+            
+  
+      
+
+
+    );
+}
+
+const styles = StyleSheet.create({
+    container: { 
+        flex: 1, 
+        padding: 16, 
+        backgroundColor: '#fff'
+    },
+    footer: { 
+        flexDirection: 'row', 
+        justifyContent: 'space-around', 
+        paddingVertical: 16, 
+        borderTopWidth: 1, 
+        borderColor: '#ddd' 
+    }
+});
+
+export default Trimestre;
