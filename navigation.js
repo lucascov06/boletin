@@ -9,6 +9,7 @@ import Empezar from "./screens/Empezar";
 import Contraseña from "./screens/Contraseña"; 
 import Crear from "./screens/Crear"; 
 import HomeScreen from "./screens/Home";
+import Trimestre from "./screens/TercerTrimestre";
 
 
 const Stack = createStackNavigator();
@@ -22,8 +23,8 @@ function Mytabs() {
             <Stack.Screen name="HomeScreen" component={HomeScreen} />
             <tab.Screen name="Crear" component={Crear} />
             <tab.Screen name="Contraseña" component={Contraseña} />
-            <tab.Screen name="Singinprofesor" component={Singinprofesor } />
-
+            <tab.Screen name="Singinprofesor" component={Singinprofesor} />
+            <tab.Screen name="TercerTrimestre" component={TercerTrimestre} />
         </Stack.Navigator>    
     );
 }    
