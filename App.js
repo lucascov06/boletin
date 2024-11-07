@@ -12,6 +12,7 @@ import Contraseña from './screens/Contraseña.jsx';
 import Crear from './screens/Crear.jsx';
 import HomeScreen from './screens/Home.jsx';
 import Perfil from './screens/Perfil.jsx';
+import TercerTrimestre from './screens/TercerTrimestre.jsx';
 const Stack = createStackNavigator();
 const App = () => {
   return (
@@ -26,7 +27,7 @@ const App = () => {
       <Stack.Screen name="HomeScreen" component={HomeScreen} />
       <Stack.Screen name="Singinprofesor" component={Singinprofesor} />
       <Stack.Screen name="Perfil" component={Perfil} />
-
+      <Stack.Screen name="TercerTrimestre" component={TercerTrimestre} />
     </Stack.Navigator>
   </NavigationContainer>
 );
