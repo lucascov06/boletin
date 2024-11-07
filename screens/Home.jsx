@@ -9,7 +9,7 @@ function HomeScreen() {
     const handlecategoriaPress = (categoria) => {
         
         if (categoria === 'Tercer Trimestre') {
-            navigation.navigate('TercerTrimestreScreen');
+            navigation.navigate('TercerTrimestre');
         } else if (categoria === 'Profesores') {
             navigation.navigate('ProfesoresScreen');
         } else if (categoria === 'Escuela') {
