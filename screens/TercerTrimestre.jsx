@@ -77,15 +77,40 @@ function Trimestre() {
 const styles = StyleSheet.create({
     container: { 
         flex: 1, 
-        padding: 16, 
-        backgroundColor: '#fff'
+        backgroundColor: '#fff', 
+        justifyContent: 'center', 
+        alignItems: 'center',
+    },
+    imageText: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        marginBottom: 20,
+        textAlign: 'center',
+    },
+    logoContainer: {
+        justifyContent: 'center', 
+        alignItems: 'center', 
+        marginBottom: 30,
+    },
+    logo: {
+        width: 200, 
+        height: 200, 
+    },
+    controls: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        width: '60%',
+        marginBottom: 20,
     },
     footer: { 
         flexDirection: 'row', 
         justifyContent: 'space-around', 
         paddingVertical: 16, 
+        paddingVertical: 20, 
         borderTopWidth: 1, 
         borderColor: '#ddd' 
+        borderColor: '#ddd', 
+        backgroundColor: '#fff',
     }
 });
 
