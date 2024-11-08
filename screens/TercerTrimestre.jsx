@@ -6,6 +6,21 @@ import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons'; 
 import { useNavigation } from '@react-navigation/native';
 
+const images = [
+  { 
+    source: require('../assets/boletin.jpg'),
+    text: 'Primer trimestre',
+  },
+  { 
+    source: require('../assets/boletin2.jpg'),
+    text: 'Segundo trimestre',
+  },
+  { 
+    source: require('../assets/boletin3.jpg'),
+    text: 'Tercer trimestre',
+  }
+];
+
 function Trimestre() {
     const navigation = useNavigation(); 
 
