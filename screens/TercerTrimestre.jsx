@@ -59,8 +59,18 @@ function Trimestre() {
                 </TouchableOpacity>
             </View>
 
+            {/* Footer con los botones */}
+            <View style={styles.footer}>
+                <TouchableOpacity onPress={() => navigation.navigate('')}>
+                    <Icon name="search" size={28} />
+                </TouchableOpacity>
 
+                <TouchableOpacity onPress={() => navigation.navigate('HomeScreen')}>
+                    <Icon name="home" size={28} color="red" />
+                </TouchableOpacity>
+            </View>
 
+        </View>
     );
 }
 
