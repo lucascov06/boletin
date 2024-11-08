@@ -22,9 +22,17 @@ const images = [
 ];
 
 function Trimestre() {
+    const [currentIndex, setCurrentIndex] = useState(0); // Controla la imagen y el texto actual
     const navigation = useNavigation(); 
 
-   
+    const handleNext = () => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length); // Cambia a la siguiente imagen
+    };
+
+    const handlePrev = () => {
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length); // Cambia a la imagen anterior
+    };
+
     return (
         <View style={styles.container}>
            
