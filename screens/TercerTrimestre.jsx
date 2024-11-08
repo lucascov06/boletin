@@ -35,16 +35,10 @@ function Trimestre() {
 
     return (
         <View style={styles.container}>
-           
-           <View style={styles.footer}>
-            <TouchableOpacity onPress={() => navigation.navigate('')}>
-                <Icon name="search" size={28} />
-            </TouchableOpacity>
+            
+            {/* Texto de la imagen actual */}
+            <Text style={styles.imageText}>{images[currentIndex].text}</Text>
 
-            <TouchableOpacity onPress={() => navigation.navigate('HomeScreen')}>
-                <Icon name="home" size={28} color="red" />
-            </TouchableOpacity>
-        </View>
 
 
            
