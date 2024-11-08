@@ -39,6 +39,14 @@ function Trimestre() {
             {/* Texto de la imagen actual */}
             <Text style={styles.imageText}>{images[currentIndex].text}</Text>
 
+            {/* Contenedor de la imagen */}
+            <View style={styles.logoContainer}>
+                <Image 
+                    source={images[currentIndex].source}
+                    style={styles.logo}
+                    resizeMode="contain"
+                />
+            </View>
 
 
            
