@@ -1,6 +1,3 @@
-import React from 'react'; 
-import { View, Text, Image, TouchableOpacity, ScrollView, StyleSheet } from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
 import React, { useState } from 'react'; 
 import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native'; 
 import Icon from 'react-native-vector-icons/Ionicons'; 
@@ -105,10 +102,8 @@ const styles = StyleSheet.create({
     footer: { 
         flexDirection: 'row', 
         justifyContent: 'space-around', 
-        paddingVertical: 16, 
         paddingVertical: 20, 
         borderTopWidth: 1, 
-        borderColor: '#ddd' 
         borderColor: '#ddd', 
         backgroundColor: '#fff',
     }
