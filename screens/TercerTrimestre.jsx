@@ -48,14 +48,17 @@ function Trimestre() {
                 />
             </View>
 
+            {/* Controles de navegación */}
+            <View style={styles.controls}>
+                <TouchableOpacity onPress={handlePrev}>
+                    <Icon name="arrow-back" size={28} />
+                </TouchableOpacity>
 
-           
-            
-        </View>
+                <TouchableOpacity onPress={handleNext}>
+                    <Icon name="arrow-forward" size={28} />
+                </TouchableOpacity>
+            </View>
 
-            
-  
-      
 
 
     );
