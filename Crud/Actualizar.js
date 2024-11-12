@@ -1,14 +1,10 @@
-import { doc, updateDoc } from "firebase/firestore";
-import { db } from "./firebaseConfig";
+import firestore from '@react-native-firebase/firestore';
 
-async function updateDocument(id) {
-  const docRef = doc(db, "Boletin", id);
-  try {
-    await updateDoc(docRef, {
-      campo1: "nuevo_valor",
-    });
-    console.log("Documento actualizado");
-  } catch (e) {
-    console.error("Error al actualizar el documento: ", e);
-  }
-}
+firestore().collection('users').doc(userId).update({
+
+age: 26,
+
+}).then(() => {
+
+console.log('Usuario Actualizado!');
+});
