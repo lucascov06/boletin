@@ -73,3 +73,84 @@ function HomeScreen() {
         </View>
     );
 }
+
+const styles = StyleSheet.create({
+    container: { 
+        flex: 1, 
+        padding: 16, 
+        backgroundColor: '#fff'
+    },
+    logoContainer: {
+        alignItems: 'center',
+        marginBottom: 10, 
+    },
+    logo: {
+        width: 180, 
+        height: 80, 
+    },
+    header: { 
+        flexDirection: 'row', 
+        alignItems: 'center', 
+        justifyContent: 'space-between', 
+        paddingVertical: 10 
+    },
+    perfilImagen: { 
+        width: 32, 
+        height: 32, 
+        borderRadius: 16 
+    },
+    searchFilterContainer: { 
+        flexDirection: 'row', 
+        justifyContent: 'space-between', 
+        marginVertical: 10 
+    },
+    searchText: { 
+        fontSize: 24, 
+        fontWeight: 'bold' 
+    },
+    sortFilter: { 
+        flexDirection: 'row' 
+    },
+    icon: { 
+        marginHorizontal: 8 
+    },
+    categoria: { 
+        width: 60, 
+        height: 60, 
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#007bff',
+        borderRadius: 30, 
+        marginHorizontal: 5,
+    },
+    categoriaText: { 
+        color: 'white', 
+        fontSize: 10, 
+        textAlign: 'center'
+    },
+    button: { 
+        backgroundColor: '#007bff', 
+        padding: 16, 
+        borderRadius: 8, 
+        alignItems: 'center', 
+        marginTop: 10 
+    },
+    buttonText: { 
+        color: '#fff', 
+        fontSize: 18 
+    },
+    subtext: { 
+        color: '#fff', 
+        fontSize: 12, 
+        marginTop: 4 
+    },
+    footer: { 
+        flexDirection: 'row', 
+        justifyContent: 'space-around', 
+        paddingVertical: 16, 
+        borderTopWidth: 1, 
+        borderColor: '#ddd' 
+    }
+});
+
+export default HomeScreen;
