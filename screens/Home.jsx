@@ -6,6 +6,10 @@ import { useNavigation } from '@react-navigation/native';
 function HomeScreen() {
     const navigation = useNavigation();
 
+    const navegar = () => {
+        navigation.navigate('Materia');
+      }
+
     const handlecategoriaPress = (categoria) => {
         
         if (categoria === 'Tercer Trimestre') {
@@ -62,8 +66,7 @@ function HomeScreen() {
                 <Text style={styles.subtext}>Hace 24hs se entregó</Text>
             </TouchableOpacity>
 
-            <View style={styles.footer}>
-                <Icon name="search" size={28} />
+            <View style={styles.footer} >
                 <Icon name="home" size={28} color="red" />
             </View>
         </View>
