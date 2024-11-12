@@ -1,9 +1,9 @@
-import { collection, getDocs } from "firebase/firestore";
-import { db } from "../firebaseConfig";
+import firestore from '@react-native-firebase/firestore';
 
-async function readDocuments() {
-  const querySnapshot = await getDocs(collection(db, "Boletin"));
-  querySnapshot.forEach((doc) => {
-    console.log(`${doc.id} => ${JSON.stringify(doc.data())}`);
-  });
-}
+firestore().collection('users').get()
+.then(querySnapshot => {
+querySnapshot.forEach(documentSnapshot => {
+console.log('User ID: ', documentSnapshot.id, documentSnapshot.data());
+});
+
+});
