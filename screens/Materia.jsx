@@ -5,17 +5,17 @@ import { useNavigation } from '@react-navigation/native';
 
 
 const data = [
-  { id: 'FIG-121', name: 'Matemáticas', project: 'Acme GTI' },
-  { id: 'FIG-122', name: 'Ed Física', project: 'Website Launch' },
-  { id: 'FIG-123', name: 'Programacion Web Dinamica', project: 'Design beta' },
-  { id: 'FIG-124', name: 'Seguridad Informatica', project: 'Bug fixes' },
-  { id: 'FIG-125', name: 'Química', project: 'Bug fixes' },
-  { id: 'FIG-126', name: 'Lengua y Literatura', project: 'Website Launch' },
-  { id: 'FIG-127', name: 'Automatización y Control', project: 'Bug fixes' },
-  { id: 'FIG-128', name: 'Ética y Deontología', project: 'Acme GTI' },
-  { id: 'FIG-129', name: 'Tecnología de Redes', project: 'Website Launch' },
-  { id: 'FIG-130', name: 'Organización y Arquitectura', project: 'Design beta' },
-  { id: 'FIG-131', name: 'Inglés Técnico', project: 'Design beta' },
+  { id: 'FIG-121', name: 'Matemáticas', project: 'Trigonometria' },
+  { id: 'FIG-122', name: 'Ed Física', project: 'Ejercicios' },
+  { id: 'FIG-123', name: 'Programacion Web Dinamica', project: 'Diseño de pagina' },
+  { id: 'FIG-124', name: 'Seguridad Informatica', project: 'Sistema de seguridad' },
+  { id: 'FIG-125', name: 'Química', project: 'Alteracion de quimicos' },
+  { id: 'FIG-126', name: 'Lengua y Literatura', project: 'Verbos colectivos' },
+  { id: 'FIG-127', name: 'Automatización y Control', project: 'Optimizacion de procesos' },
+  { id: 'FIG-128', name: 'Ética y Deontología', project: 'Aristoteles' },
+  { id: 'FIG-129', name: 'Tecnología de Redes', project: 'Sistemas de entradas' },
+  { id: 'FIG-130', name: 'Organización y Arquitectura', project: 'Numero Hexadecimales' },
+  { id: 'FIG-131', name: 'Inglés Técnico', project: 'Nombres de componentes' },
 ];
 
 export default function BuscarMateriasScreen() {
