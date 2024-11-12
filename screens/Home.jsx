@@ -16,6 +16,7 @@ function HomeScreen() {
         } else if (categoria === 'Profesores') {
             navigation.navigate('ProfesoresScreen');
         } else if (categoria === 'Escuela') {
+            
             Linking.openURL('https://epet20.edu.ar/');
         }
     };
@@ -59,15 +60,6 @@ function HomeScreen() {
                     </TouchableOpacity>
                 ))}
             </ScrollView>
-
-            
-            <View style={styles.aulaContainer}>
-                <Image 
-                    source={require('../assets/aula.png')}
-                    style={styles.aulaImage}
-                    resizeMode="cover"
-                />
-            </View>
 
             <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('TercerTrimestre')}>
                 <Text style={styles.buttonText}>Revisa tu Boletin</Text>
@@ -136,21 +128,12 @@ const styles = StyleSheet.create({
         fontSize: 10, 
         textAlign: 'center'
     },
-    aulaContainer: { 
-        alignItems: 'center', 
-        marginVertical: 5 
-    },
-    aulaImage: { 
-        width: 380, 
-        height: 350, 
-        borderRadius: 15 
-    },
     button: { 
         backgroundColor: '#007bff', 
         padding: 16, 
         borderRadius: 8, 
         alignItems: 'center', 
-        marginTop: 10
+        marginTop: 10 
     },
     buttonText: { 
         color: '#fff', 
