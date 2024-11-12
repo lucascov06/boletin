@@ -32,11 +32,8 @@ function Trimestre() {
 
     return (
         <View style={styles.container}>
-            
-            
             <Text style={styles.imageText}>{images[currentIndex].text}</Text>
 
-            
             <View style={styles.logoContainer}>
                 <Image 
                     source={images[currentIndex].source}
@@ -45,7 +42,6 @@ function Trimestre() {
                 />
             </View>
 
-            
             <View style={styles.controls}>
                 <TouchableOpacity onPress={handlePrev}>
                     <Icon name="arrow-back" size={28} />
@@ -56,17 +52,17 @@ function Trimestre() {
                 </TouchableOpacity>
             </View>
 
-            
             <View style={styles.footer}>
-                <TouchableOpacity onPress={() => navigation.navigate('')}>
+                <TouchableOpacity onPress={() => navigation.navigate('Materia')}>
                     <Icon name="search" size={28} />
                 </TouchableOpacity>
+
+                <View style={styles.footerSpace} /> 
 
                 <TouchableOpacity onPress={() => navigation.navigate('HomeScreen')}>
                     <Icon name="home" size={28} color="red" />
                 </TouchableOpacity>
             </View>
-
         </View>
     );
 }
@@ -101,12 +97,16 @@ const styles = StyleSheet.create({
     },
     footer: { 
         flexDirection: 'row', 
-        justifyContent: 'space-around', 
+        justifyContent: 'space-between', 
         paddingVertical: 20, 
         borderTopWidth: 1, 
         borderColor: '#ddd', 
         backgroundColor: '#fff',
-    }
+        width: '30%', 
+    },
+    footerSpace: { 
+        flex: 1, 
+    },
 });
 
 export default Trimestre;
