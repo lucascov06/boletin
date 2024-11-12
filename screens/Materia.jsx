@@ -5,17 +5,17 @@ import { useNavigation } from '@react-navigation/native';
 
 
 const data = [
-  { id: 'FIG-121', name: 'Matemáticas', project: 'Trigonometria' },
-  { id: 'FIG-122', name: 'Ed Física', project: 'Ejercicios' },
-  { id: 'FIG-123', name: 'Programacion Web Dinamica', project: 'Diseño de pagina' },
-  { id: 'FIG-124', name: 'Seguridad Informatica', project: 'Sistema de seguridad' },
-  { id: 'FIG-125', name: 'Química', project: 'Alteracion de quimicos' },
-  { id: 'FIG-126', name: 'Lengua y Literatura', project: 'Verbos colectivos' },
-  { id: 'FIG-127', name: 'Automatización y Control', project: 'Optimizacion de procesos' },
-  { id: 'FIG-128', name: 'Ética y Deontología', project: 'Aristoteles' },
-  { id: 'FIG-129', name: 'Tecnología de Redes', project: 'Sistemas de entradas' },
-  { id: 'FIG-130', name: 'Organización y Arquitectura', project: 'Numero Hexadecimales' },
-  { id: 'FIG-131', name: 'Inglés Técnico', project: 'Nombres de componentes' },
+  { id: 'MTA-1', name: 'Matemáticas', project: 'Trigonometria' },
+  { id: 'MTA-2', name: 'Ed Física', project: 'Ejercicios' },
+  { id: 'MTA-3', name: 'Programacion Web Dinamica', project: 'Diseño de pagina' },
+  { id: 'MTA-4', name: 'Seguridad Informatica', project: 'Sistema de seguridad' },
+  { id: 'MTA-5', name: 'Química', project: 'Alteracion de quimicos' },
+  { id: 'MTA-6', name: 'Lengua y Literatura', project: 'Verbos colectivos' },
+  { id: 'MTA-7', name: 'Automatización y Control', project: 'Optimizacion de procesos' },
+  { id: 'MTA-8', name: 'Ética y Deontología', project: 'Aristoteles' },
+  { id: 'MTA-9', name: 'Tecnología de Redes', project: 'Sistemas de entradas' },
+  { id: 'MTA-10', name: 'Organización y Arquitectura', project: 'Numero Hexadecimales' },
+  { id: 'MTA-11', name: 'Inglés Técnico', project: 'Nombres de componentes' },
 ];
 
 export default function BuscarMateriasScreen() {
