@@ -67,6 +67,7 @@ function HomeScreen() {
             </TouchableOpacity>
 
             <View style={styles.footer} >
+                <Icon name="search" size={28}  onPress={navegar}/>
                 <Icon name="home" size={28} color="red" />
             </View>
         </View>
