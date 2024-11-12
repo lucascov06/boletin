@@ -19,24 +19,24 @@ const images = [
 ];
 
 function Trimestre() {
-    const [currentIndex, setCurrentIndex] = useState(0); // Controla la imagen y el texto actual
+    const [currentIndex, setCurrentIndex] = useState(0); 
     const navigation = useNavigation(); 
 
     const handleNext = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length); // Cambia a la siguiente imagen
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length); 
     };
 
     const handlePrev = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length); // Cambia a la imagen anterior
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length); 
     };
 
     return (
         <View style={styles.container}>
             
-            {/* Texto de la imagen actual */}
+            
             <Text style={styles.imageText}>{images[currentIndex].text}</Text>
 
-            {/* Contenedor de la imagen */}
+            
             <View style={styles.logoContainer}>
                 <Image 
                     source={images[currentIndex].source}
@@ -45,7 +45,7 @@ function Trimestre() {
                 />
             </View>
 
-            {/* Controles de navegación */}
+            
             <View style={styles.controls}>
                 <TouchableOpacity onPress={handlePrev}>
                     <Icon name="arrow-back" size={28} />
@@ -56,7 +56,7 @@ function Trimestre() {
                 </TouchableOpacity>
             </View>
 
-            {/* Footer con los botones */}
+            
             <View style={styles.footer}>
                 <TouchableOpacity onPress={() => navigation.navigate('')}>
                     <Icon name="search" size={28} />
