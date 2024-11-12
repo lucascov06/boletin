@@ -1,5 +1,5 @@
 import React from 'react'; 
-import { View, Text, Image, TouchableOpacity, ScrollView, StyleSheet } from 'react-native';
+import { View, Text, Image, TouchableOpacity, ScrollView, StyleSheet, Linking } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
 
@@ -8,16 +8,16 @@ function HomeScreen() {
 
     const navegar = () => {
         navigation.navigate('Materia');
-    }
+    };
 
     const handlecategoriaPress = (categoria) => {
-        
         if (categoria === 'Tercer Trimestre') {
             navigation.navigate('TercerTrimestre');
         } else if (categoria === 'Profesores') {
             navigation.navigate('ProfesoresScreen');
         } else if (categoria === 'Escuela') {
-            navigation.navigate('EscuelaScreen');
+            
+            Linking.openURL('https://epet20.edu.ar/');
         }
     };
 
@@ -61,7 +61,7 @@ function HomeScreen() {
                 ))}
             </ScrollView>
 
-            <TouchableOpacity style={styles.button}>
+            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('TercerTrimestre')}>
                 <Text style={styles.buttonText}>Revisa tu Boletin</Text>
                 <Text style={styles.subtext}>Hace 24hs se entregó</Text>
             </TouchableOpacity>
