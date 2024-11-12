@@ -11,8 +11,9 @@ import Contraseña from "./screens/Contraseña";
 import Crear from "./screens/Crear";
 import HomeScreen from "./screens/Home";
 import Trimestre from "./screens/TercerTrimestre";
-import Materia from "./screens/Materia"; // Asegúrate de que el archivo sea correcto
-
+import Materia from "./screens/Materia"; 
+import EmpezarProf from "./screens/EmpezarProf";
+import HomeProf from "./screens/HomeProf";
 const Stack = createStackNavigator();
 
 function MyStack() {
@@ -27,6 +28,8 @@ function MyStack() {
             <Stack.Screen name="Singinprofesor" component={Singinprofesor} />
             <Stack.Screen name="TercerTrimestre" component={Trimestre} />
             <Stack.Screen name="Materia" component={Materia} />
+            <Stack.Screen name="EmpezarProf" component={EmpezarProfesor} />
+            <Stack.Screen name="HomeProf" component={HomeProfesor} />
         </Stack.Navigator>    
     );
 }    
