@@ -1,12 +1,6 @@
-import { doc, deleteDoc } from "firebase/firestore";
-import { db } from "./firebaseConfig";
+import firestore from '@react-native-firebase/firestore';
 
-async function deleteDocument(id) {
-const docRef = doc(db, "boletin", id);
-try {
-    await deleteDoc(docRef);
-    console.log("Documento eliminado");
-} catch (e) {
-    console.error("Error al eliminar el documento: ", e);
-}
-}
+firestore().collection('users').doc(userId).delete()
+.then(() => {
+console.log('Usuario Borrado!');
+});
