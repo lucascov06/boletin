@@ -14,7 +14,7 @@ function HomeScreen() {
         if (categoria === 'Tercer Trimestre') {
             navigation.navigate('TercerTrimestre');
         } else if (categoria === 'Profesores') {
-            navigation.navigate('ProfesoresScreen');
+            navigation.navigate('Profesores');
         } else if (categoria === 'Escuela') {
             
             Linking.openURL('https://epet20.edu.ar/');
