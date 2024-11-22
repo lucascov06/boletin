@@ -15,6 +15,8 @@ import TercerTrimestre from './screens/TercerTrimestre.jsx';
 import Materia from './screens/Materia.jsx'; 
 import EmpezarProf from './screens/EmpezarProf.jsx'; 
 import HomeProf from './screens/HomeProf.jsx'; 
+import TercerTrimestreProf from './screens/TercerTrimestreProf.jsx'; 
+import Profesores from './screens/Profesores.jsx'; 
 
 
 const Stack = createStackNavigator();
@@ -35,6 +37,8 @@ const App = () => {
         <Stack.Screen name="Materia" component={Materia} />
         <Stack.Screen name="EmpezarProf" component={EmpezarProf} />
         <Stack.Screen name="HomeProf" component={HomeProf} />
+        <Stack.Screen name="TercerTrimestreProf" component={TercerTrimestreProf} />
+        <Stack.Screen name="Profesores" component={Profesores} />
 
 
       </Stack.Navigator>
