@@ -12,9 +12,9 @@ function HomeScreen() {
 
     const handlecategoriaPress = (categoria) => {
         if (categoria === 'Tercer Trimestre') {
-            navigation.navigate('TercerTrimestre');
+            navigation.navigate('TercerTrimestreProf');
         } else if (categoria === 'Profesores') {
-            navigation.navigate('ProfesoresScreen');
+            navigation.navigate('Profesores');
         } else if (categoria === 'Escuela') {
             
             Linking.openURL('https://epet20.edu.ar/');
@@ -61,7 +61,7 @@ function HomeScreen() {
                 ))}
             </ScrollView>
 
-            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('TercerTrimestre')}>
+            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('TercerTrimestreProf')}>
                 <Text style={styles.buttonText}>Visualizar boletines</Text>
                 <Text style={styles.subtext}>Hace 24hs se envio</Text>
             </TouchableOpacity>
