@@ -17,6 +17,7 @@ import HomeProf from "./screens/HomeProf";
 import HomeProf from "./screens/TercerTrimestreProf";
 import TrimestreProf from "./screens/TercerTrimestreProf";
 import BuscarProfesoresScreen from "./screens/Profesores";
+import Contrasena from "./screens/NuevaContrasena";
 
 const Stack = createStackNavigator();
 
@@ -36,6 +37,7 @@ function MyStack() {
             <Stack.Screen name="HomeProf" component={HomeProfesor} />
             <Stack.Screen name="TercerTrimestreProf" component={TrimestreProf} />
             <Stack.Screen name="Profesores" component={BuscarProfesoresScreen} />
+            <Stack.Screen name="NuevaContrasena" component={Contrasena} />
 
         </Stack.Navigator>    
     );
