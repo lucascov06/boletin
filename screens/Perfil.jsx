@@ -3,8 +3,8 @@ import { View, Text, TextInput, TouchableOpacity, StyleSheet, ScrollView, Picker
 import { launchImageLibrary } from 'react-native-image-picker';
 
 const Perfil = ({ navigation }) => {
-  const [email, setEmail] = useState('luca.ejemplo@gmail.com');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('ejemploluca@gmail.com');
+  const [password, setPassword] = useState('ejemplo');
   const [codigoId, setCodigoId] = useState('450876');
   const [domicilio, setDomicilio] = useState('');
   const [ciudad, setCiudad] = useState('');
@@ -14,6 +14,10 @@ const Perfil = ({ navigation }) => {
 
   const handleSave = () => {
     navigation.navigate('HomeScreen');
+  };
+
+  const handleCambiarContraseña = () => {
+    navigation.navigate('NuevaContrasena');
   };
 
   const handleLogout = () => {
@@ -32,7 +36,7 @@ const Perfil = ({ navigation }) => {
   const selectProfileImage = () => {
     launchImageLibrary({ mediaType: 'photo' }, (response) => {
       if (response.didCancel) {
-        console.log('User cancelled image picker');
+        console.log('usuario cancelo ImagePicker');
       } else if (response.error) {
         console.log('ImagePicker Error: ', response.error);
       } else {
@@ -71,9 +75,9 @@ const Perfil = ({ navigation }) => {
             placeholderTextColor="#8A8A8A"
             secureTextEntry
           />
-          <TouchableOpacity>
-            <Text style={styles.changePassword}>Cambiar contraseña</Text>
-          </TouchableOpacity>
+           <TouchableOpacity style={styles.changepasswordButton} onPress={handleCambiarContraseña}>
+          <Text style={styles.changepasswordButtonText}>Cambiar Contraseña</Text>
+        </TouchableOpacity>
         </View>
 
         <View style={styles.section}>
@@ -187,10 +191,16 @@ const styles = StyleSheet.create({
     padding: 10,
     marginBottom: 10,
   },
-  changePassword: {
-    color: 'red',
+  changepasswordButton: {
+    padding: 5,
+    alignItems: 'right',
+    
+  },
+  changepasswordButtonText: {
+    color: '#F0466D',
+    fontSize: 14,
     textAlign: 'right',
-    marginBottom: 20,
+    fontWeight: 'bold',
   },
   picker: {
     height: 50,
