@@ -18,10 +18,11 @@ import Empezar from './Empezar';
         const logueo = async () => {
             try {
                 await signInWithEmailAndPassword(auth, email, password);
-                Alert.alert('Iniciando sesión', 'Iniciando....');
+                Alert.alert("Iniciando sesión", "Iniciando....");
                 navigation.navigate('Empezar');
             } catch (error) {
                 console.log(error);
+                Alert.alert("Error, los datos ingresados no son correctos")
             }
         };
     
