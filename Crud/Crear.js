@@ -1,6 +1,6 @@
 import firestore from '@react-native-firebase/firestore';
 
-firestore().collection('usuarios').add({
+firestore().collection('users').add({
 
 name: 'John Doe',
 
