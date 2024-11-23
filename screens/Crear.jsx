@@ -22,7 +22,7 @@ const Crear = (props) => {
             navigation.navigate('Empezar');
             console.log("cuenta creada correctamente");
         } catch (error) {
-            console.log(error);
+            alert("Asegurese de que la contraseña tenga minimo 6 caracteres");
         }
     };
 
