@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import Empezar from './Empezar';
-    import appFirebase from '../Crud/firebaseConfig';
-    import { getAuth,} from 'firebase/auth';
-    const auth = getAuth(appFirebase);
-    import { StyleSheet } from 'react-native';
-    import { View, Text, TextInput, TouchableOpacity, Image, Pressable, Alert } from 'react-native';
-    import { useNavigation } from '@react-navigation/native';
-    import { signInWithEmailAndPassword } from 'firebase/auth';
-    import Icon from 'react-native-vector-icons/FontAwesome';
+import appFirebase from '../Crud/firebaseConfig';
+import { getAuth,} from 'firebase/auth';
+const auth = getAuth(appFirebase);
+import { StyleSheet } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, Image, Pressable, Alert } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
     const Archivo = (props) => {
         const navigation = useNavigation();
