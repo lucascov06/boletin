@@ -17,6 +17,7 @@ import EmpezarProf from './screens/EmpezarProf.jsx';
 import HomeProf from './screens/HomeProf.jsx'; 
 import TercerTrimestreProf from './screens/TercerTrimestreProf.jsx'; 
 import Profesores from './screens/Profesores.jsx'; 
+import Contrasena from './screens/NuevaContrasena.jsx';
 
 
 const Stack = createStackNavigator();
@@ -39,6 +40,7 @@ const App = () => {
         <Stack.Screen name="HomeProf" component={HomeProf} />
         <Stack.Screen name="TercerTrimestreProf" component={TercerTrimestreProf} />
         <Stack.Screen name="Profesores" component={Profesores} />
+        <Stack.Screen name="NuevaContrasena" component={Contrasena} />
 
 
       </Stack.Navigator>
